@@ -26,7 +26,7 @@ class SuperheroViewModelTest {
 
     // Mocks
     private lateinit var repository: Repository
-    // Fakes
+
 
     @Before
     fun setUp() {
@@ -54,3 +54,8 @@ class SuperheroViewModelTest {
         Dispatchers.resetMain()
     }
 }
+/*
+En el test unitario real he tratado de testear la la llamada para recoger las localizaciones
+que generamos en el mock del repositorio. Las generamos a partir del id del héroe y lo comprobamos
+en el assert, así como el número de localizaciones
+ */

@@ -54,3 +54,7 @@ class LoginViewModelTestWithFakeRepository {
         Dispatchers.resetMain()
     }
 }
+/*
+En el test unitario real he tratado de testear la función del login, falseando que llega un token que se construye en el Generators
+y comprobamos que llega con una longitud conocida. Se verifica el assert confirmando que el LiveData se actualiza con el token generado de forma fake.
+ */
