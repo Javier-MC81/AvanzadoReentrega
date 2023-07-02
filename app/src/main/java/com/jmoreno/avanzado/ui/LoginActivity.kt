@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         binding.bLogin.setOnClickListener {
             val user = binding.etUser.text.toString()
             val password = binding.etPassword.text.toString()
-            val credential = Credentials.basic("jmorenocarrero@hotmail.com", "Realmadrid14")
+            val credential = Credentials.basic("$user", "$password")
 
             lifecycleScope.launch {
                 viewModel.getLogin(credential)
